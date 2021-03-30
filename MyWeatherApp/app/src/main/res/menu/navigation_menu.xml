@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/addLocFragment"
+        android:icon="@drawable/home"
+        android:title="@string/menu_add_loc_text"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/helpFragment"
+        android:icon="@drawable/information"
+        android:title="@string/menu_help_text"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/settingsFragment"
+        android:icon="@drawable/settings"
+        android:title="@string/menu_settings_text"
+        app:showAsAction="always" />
+
+</menu>

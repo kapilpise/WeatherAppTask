@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_layout"
+    app:startDestination="@id/addLocFragment">
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.code.myweather.ui.settings.SettingsFragment"
+        android:label="SettingsFragment"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/helpFragment"
+        android:name="com.code.myweather.ui.help.HelpFragment"
+        android:label="HelpFragment"
+        tools:layout="@layout/fragment_help" />
+
+    <fragment
+        android:id="@+id/fiveDaysFragment"
+        android:name="com.code.myweather.ui.home.citydetail.FiveDaysFragment"
+        android:label="FiveDaysFragment"
+        tools:layout="@layout/fragment_five_days">
+
+    </fragment>
+    <fragment
+        android:id="@+id/oneDayDetailFragment"
+        android:name="com.code.myweather.ui.home.citydetail.CityDailyDetailFragment"
+        android:label="OneDayDetailFragment">
+
+        <action
+            android:id="@+id/action_oneDayDetailFragment_to_fiveDaysFragment2"
+            app:destination="@id/fiveDaysFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/addLocFragment"
+        android:name="com.code.myweather.ui.home.AddLocationFragment"
+        android:label="AddLocFragment"
+        tools:layout="@layout/fragment_add_location">
+        <action
+            android:id="@+id/action_oneDayFragment_to_oneDayDetailFragment2"
+            app:destination="@id/oneDayDetailFragment" />
+        <action
+            android:id="@+id/action_addLocFragment_to_selectLocationOnMap2"
+            app:destination="@id/selectLocationOnMap" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/selectLocationOnMap"
+        android:name="com.code.myweather.ui.home.map.SelectLocationMapFragment"
+        android:label="SelectLocationOnMapFragment" />
+
+</navigation>

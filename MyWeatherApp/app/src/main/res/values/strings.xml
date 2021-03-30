@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">My Weather App</string>
+    <string name="api_key_map">AIzaSyDbxo8Bo23IVt_RIfTpfEQ7z9Vh1f2r6oI</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="menu_settings_text">Settings</string>
+    <string name="menu_add_loc_text">Add Location</string>
+    <string name="menu_help_text">Help</string>
+
+    <string name="text_pressure">Pressure</string>
+    <string name="text_wind">Wind</string>
+    <string name="text_sunrise">Sunrise</string>
+    <string name="text_humidity">Humidity</string>
+    <string name="text_visibility">Visibility</string>
+    <string name="text_sunset">Sunset</string>
+    <string name="splash_screen_message">"Welcome To Weather App</string>
+
+
+</resources>
